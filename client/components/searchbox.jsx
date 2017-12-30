@@ -18,10 +18,16 @@ class Searchbox extends Component {
 
     render() {
         return (
-            <div className="searchbox">
-                <h2>Searchbox</h2>
-                <input type="text" onChange={event => this.handleTextChange(event)} />
-                <button onClick={() => this.props.doSearch(this.state.text)}>Search</button>
+            <div className="searchbox panel panel-default">
+                <div className="panel-body">
+                <h2>Buscá tu futura propiedad</h2>
+                    <div className="input-group">
+                        <input className="form-control" type="text" onChange={event => this.handleTextChange(event)} />
+                        <div className="input-group-btn">
+                            <button className="btn btn-primary search-button" onClick={() => this.props.doSearch(this.state.text)}>Search</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

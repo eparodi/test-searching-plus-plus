@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import App from './components/app.jsx';
 import configureStore from './store';
 
-import './styles/index.css';
+import styles from './styles/index.css';
 
 const store = configureStore(window.initialStoreData);
 window.dev = { store };
