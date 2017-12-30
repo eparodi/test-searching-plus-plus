@@ -1,4 +1,4 @@
-import App from './components/App';
+import App from './components/app.jsx';
 import configureStore from './store';
 import fs from 'fs';
 import React from 'react';
